@@ -14,9 +14,7 @@
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{> burgers/burger-block devoured=false}}
-      {{!-- {{this.burger_name}} --}}
-      {{!-- <button class="devoured"  data-id="{{id}}" data-newdevoured="{{devoured}}">DEVOUR</button><br> --}}
+    {{> burgers/burger-block devoured=false}}
   {{/unless}}
   {{/each}}
 </ul>
