@@ -6,7 +6,7 @@ order to store and display burgers. When eaten, the item will be shown in
 the Burgers Already Eaten. Otherwise, the items will be listed in Burgers to 
 be Eaten. 
 # User Story 
-User wants to log all burgers they have devour and burgers that are waiting to be eaten
+User wants to log all the burgers they have devour and burgers that are waiting to be eaten
 
 # Screenshot
 ![](public/assets/screenshot.png)
