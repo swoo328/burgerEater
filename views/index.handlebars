@@ -1,21 +1,22 @@
 <h1>EAT DA HAMBURGER</h1>
 
-<h2>Burgers To Eat</h2>
+<h2>Burgers Already Eaten</h2>
 
 <ul>
   {{#each burgers}}
   {{#if devoured}}
-      <span><strong> {{this.burger_name}} </strong></span>
+      {{> burgers/burger-block devoured=true}}
   {{/if}}
   {{/each}}
 </ul>
 
-<h2>Order Burgers</h2>
+<h2>Burgers to be Eaten</h2>
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  
-      {{this.burger_name}}<br>
+  {{> burgers/burger-block devoured=false}}
+      {{!-- {{this.burger_name}} --}}
+      {{!-- <button class="devoured"  data-id="{{id}}" data-newdevoured="{{devoured}}">DEVOUR</button><br> --}}
   {{/unless}}
   {{/each}}
 </ul>
@@ -26,7 +27,7 @@
 
   <div class="form-group">
     <label for="ca">Burger name:</label>
-    <input type="text" id="Burger" name="name">
+    <input type="text" id="ca" name="name">
   </div>
   <button type="submit">Add Burger</button>
 </form> 
