@@ -1,6 +1,10 @@
-INSERT INTO burgers (burger_name) VALUES ('cheese');
-INSERT INTO burgers (burger_name) VALUES ('italian');
-INSERT INTO burgers (burger_name) VALUES ('slider');
-INSERT INTO burgers (burger_name, devoured) VALUES ('chicken', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('avocado', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('juicy lucy', true);
+CREATE DATABASE eat_hamburgers_db;
+USE eat_hamburgers_db;
+
+CREATE TABLE burgers
+(
+	id int NOT NULL AUTO_INCREMENT,
+	burger_name varchar(255) NOT NULL,
+	devoured BOOLEAN DEFAULT false,
+	PRIMARY KEY (id)
+);
