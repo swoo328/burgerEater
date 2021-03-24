@@ -6,11 +6,6 @@ if(process.env.JAWSDB_URL && process.env.JAWSDB_URL.length > 0){
 }
 else{
   connection = mysql.createConnection({
-    // host: "u6354r3es4optspf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    // port: 3306,
-    // user: "q2rnmw14zzgi44pf",
-    // password: "vtvhp22wj2djzrqy",
-    // database: "eat_hamburgers_db"
     host:"127.0.0.1",
     port: 3306,
     user: "swoo328",
